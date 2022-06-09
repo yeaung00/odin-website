@@ -1,127 +1,138 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    margin:0;
+    background-color: #1F2937;
+    font-family: 'Ubuntu', sans-serif;
 }
-.header-box {
-    width:auto;
-    height: 500px;
-    margin: -1%;
-    padding: 1%;
-    padding-left:15%;
-    padding-right:15%;
+
+header {
     background-color: #1F2937;
 }
 
-.header-contents {
-    width:auto;
-    height:auto;
-    display:flex;
-    gap:40%;
-    padding-bottom: 7%;
-}
+/* ======================================
+Typography
+======================================== */
 
-.logo {
+.header-container h1 {
     color:white;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 3rem;
 }
-
-.header-links {
-    margin-left: 60%;
-    font-size: 18px;
-    width:400px;
-    height: auto;
-    display:flex;
-    justify-content: end;
-    gap:5%;
-}
-
-a {
-    color:#E5E7Eb;
-    text-decoration: none;
-}
-
-.hero-box {
+.header-container p {
     color:white;
-    width: auto;
-    height: 500px;
-    font-size: 48px;
+    font-size: 1rem;
+}
+
+/* ======================================
+Layout
+======================================== */
+.container {
+    width:90vw;
+    max-width: 1000px;
+    margin: 0 auto;
     display:flex;
+    padding: 3em 0;
+    justify-content: space-around;
 }
 
-.hero-contents {
-    width: auto;
-    height: 100px;
+.header-container {
+    max-width: 20em;
 }
 
-.hero-contents .description1 {
-    font-size: 48px;
-    font-weight: bold;
-    color: #E5E7Eb;
-    width: 70%;
-
+.portrait {
+    max-width: 35%;
 }
 
-.hero-contents .description2 {
-    margin-top: 5%;
-    font-size: 18px;
-    color: #E5E7Eb;
-    width: 75%;
-    width:80%;
+.header-container button {
+    background-color: rgb(50, 130, 250);
+    border: none;
+    border-radius: 8px;
+    padding: .25em 1em;
+    color:white;
+    font-size: 1.5rem;
 }
+/* ======================================
+Nav bar
+======================================== */
 
-.image-box {
-    margin-top:7%;
-    width:80%;
-    height: 50%;
+nav ul {
+    margin: 0;
+    padding: 1.7em;
     display:flex;
     justify-content: center;
-    align-items: center;
-    font-size: 18px;
+    gap: 8em;
 }
 
-.signup button{
-    background-color: #3882F6;
-    border: none;
-    color: white;
-    text-align: center;
+nav li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+nav a {
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 8px;
-    width: 125px;
-    height: 35px;
+    color:white;
+    padding: .25em;
+}
+nav a:hover {
+    color: rgb(152, 151, 143);
 }
 
-.gallery-box {
-    width: 100%;
-    height: 500px;
+.current-page {
+    color: rgb(152, 151, 143);
+    border-bottom: 1px solid rgb(152, 151, 143);
 }
-
-.title {
-    text-align: center;
-    font-size: 28px;
+nav img {
+    width: 1.5em;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
 }
-.image-box {
+nav img:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+.container-gallery {
+    max-width: 100%;
+    padding: 10em 0;
     display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20em;
+}  
 
-    gap:5%;
-}
+@media (max-width:680px) {
+    .container {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-container {
+        max-width:90%;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2em 5em;
+        padding-top: 0;
+    }
+    .header-container h1 {
+        font-size: 3rem;
+    }
+    .portrait {
+        max-width: 70%;
+    }
+    nav ul {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap:2.5em;
+    }
+} 
+/* ======================================
+Footer
+======================================== */
 
-.image-box .image1{
-    margin-left:25%;
-    height: 250px;
-    width: 400px;
-}
-.image-box .image2{
-    height: 250px;
-    width: 400px;
-}
-.image-box .image3{
-    height: 250px;
-    width: 400px;
-}
-.image-box .image4{
-    height: 250px;
-    width: 400px;
+.github-link {
+    font-size: 24px;
+    
+  }
+.container-footer a {
+    text-decoration: none;
+    
+    color:black;
 }
