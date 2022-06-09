@@ -16,9 +16,9 @@ Typography
     color:white;
     font-size: 3rem;
 }
-.header-container p {
+p {
     color:white;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 /* ======================================
@@ -31,23 +31,38 @@ Layout
     display:flex;
     padding: 3em 0;
     justify-content: space-around;
+
 }
 
 .header-container {
+
     max-width: 20em;
 }
-
+.portrait-container {
+    position:relative;
+}
 .portrait {
     max-width: 35%;
 }
 
-.header-container button {
+.portrait-container button {
+    position: absolute;
+    bottom:50%;
     background-color: rgb(50, 130, 250);
     border: none;
     border-radius: 8px;
-    padding: .25em 1em;
+    padding: .5em;
     color:white;
     font-size: 1.5rem;
+    opacity: 1;
+    cursor: pointer;
+}
+.pet-count {
+    width:90vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
 }
 /* ======================================
 Nav bar
@@ -101,21 +116,20 @@ nav img:hover {
         display:flex;
         flex-direction: column;
         align-items: center;
-        padding: 1em;
+        padding: .5em;
     }
     .header-container {
         max-width:90%;
         display:flex;
         flex-direction: column;
         text-align: center;
-        padding: 2em 5em;
-        padding-top: 0;
+
     }
     .header-container h1 {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .header-container p {
-        font-size: 0.7rem;
+        font-size: 1.5rem;
     }
     .portrait {
         max-width: 70%;
