@@ -61,8 +61,6 @@ confirmInput.setAttribute('id', 'confirmPw');
 
 
 
-console.log(label);
-console.log(input);
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 let petCount = 0;
 
