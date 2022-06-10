@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel = "stylesheet" href = "styles2.css">
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "col1">
+            <img class = "portrait" src = "./images/portrait.JPG">
+        </div>
+
+        <div class = "col2">
+            <div class = "textContainer">
+                <h1>Sign up now to receive weekly pictures of Waffles</h1>
+            </div>
+            <div class = "sign-up">
+                <div class = "column">
+                    <form id = "createAccount" action="example.com/path" method="post">
+                        <label for="firstName">First Name</label>
+                        <input type="email" name = "firstName" id="firstName" required>
+                        <label for="email">Email</label>
+                        <input type="text" name = "email" id="email" required>
+                        <label for="pw">Password</label>
+                        <input type="password" name = "password" id="pw" required>
+                    </form>
+                    
+                </div>
+                <div class = "column">
+                    <form id = "createAccount" action="example.com/path" method="post">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name = "lastName" id="lastName" required>
+                        <label for="phNum">Phone number</label>
+                        <input type="text" name = "phone" id="phNum" required>
+                        <label for="confirmPw">Confirm password</label>
+                        <input type="password" name = "confirm" id="confirmPw" required>
+                    </form>
+                </div>
+                
+            </div>
+            
+            <div class = "textContainer sign-in">
+                <button type = "submit" form = "createAccount" class = "createAcc">Create Account</button>
+                <p>Already have an account? <a class = "login" href = "#">Log in</a></p>
+            </div>
+            
+    </div>
+</body>
+</html>
