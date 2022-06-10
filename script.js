@@ -1,19 +1,68 @@
 const pet = document.querySelector('.portrait');
 const countDisplay = document.querySelector('.countDisplay');
-const firstName = document.getElementById('firstName');
-const lastName = document.getElementById('lastName');
-const email = document.getElementById('email');
-const phNum = document.getElementById('phNum');
-const pw = document.getElementById('pw');
-const confirmPw = document.getElementById('confirmPw');
-const firstLabel = document.getElementById('firstLabel');
-const lastLabel = document.getElementById('lastLabel');
-const emailLabel = document.getElementById('emailLabel');
-const numLabel = document.getElementById('numLabel');
-const pwLabel = document.getElementById('pwLabel');
-const confirmLabel = document.getElementById('confirmLabel');
+
 const createAccount = document.getElementById('createAccount');
 const createAccount2 = document.getElementById('createAccount-2');
+
+let firstLabel = document.createElement('label');
+let lastLabel = document.createElement('label');
+let emailLabel = document.createElement('label');
+let phNum = document.createElement('label');
+let pwLabel = document.createElement('label');
+let confirmPw = document.createElement('label');
+
+let firstInput = document.createElement('input');
+let lastInput = document.createElement('input');
+let emailInput = document.createElement('input');
+let numInput = document.createElement('input');
+let pwInput = document.createElement('input');
+let confirmInput = document.createElement('input');
+
+firstLabel.setAttribute('for', 'firstName');
+firstLabel.textContent = 'First name';
+firstInput.setAttribute('type', 'text');
+firstInput.setAttribute('name', 'firstName');
+firstInput.setAttribute('id', 'firstName');
+
+
+lastLabel.setAttribute('for', 'lastName');
+lastLabel.textContent = 'Last name';
+lastInput.setAttribute('type', 'text');
+lastInput.setAttribute('name', 'lastName');
+lastInput.setAttribute('id', 'lastName');
+
+
+emailLabel.setAttribute('for', 'email');
+emailLabel.textContent = 'Email';
+emailInput.setAttribute('type', 'email');
+emailInput.setAttribute('name', 'email');
+emailInput.setAttribute('id', 'email');
+
+phNum.setAttribute('for', 'phNum');
+phNum.textContent = 'Phone number';
+numInput.setAttribute('type', 'number');
+numInput.setAttribute('name', 'phone');
+numInput.setAttribute('id', 'phNum');
+
+
+pwLabel.setAttribute('for', 'pw');
+pwLabel.textContent = 'Password';
+pwInput.setAttribute('type', 'password');
+pwInput.setAttribute('name', 'password');
+pwInput.setAttribute('id', 'pw]');
+
+
+confirmPw.setAttribute('for', 'confirmPw');
+confirmPw.textContent = 'Confirm password';
+confirmInput.setAttribute('type', 'password');
+confirmInput.setAttribute('name', 'confirm');
+confirmInput.setAttribute('id', 'confirmPw');
+
+
+
+
+console.log(label);
+console.log(input);
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 let petCount = 0;
 
@@ -28,17 +77,17 @@ function reOrder() {
     createAccount.innerHTML = "";
     createAccount2.innerHTML = "";
     createAccount.appendChild(firstLabel);
-    createAccount.appendChild(firstName);
+    createAccount.appendChild(firstInput);
     createAccount.appendChild(lastLabel);
-    createAccount.appendChild(lastName);
+    createAccount.appendChild(lastInput);
     createAccount.appendChild(emailLabel);
-    createAccount.appendChild(email);
-    createAccount.appendChild(numLabel);
+    createAccount.appendChild(emailInput);
     createAccount.appendChild(phNum);
+    createAccount.appendChild(numInput);
     createAccount.appendChild(pwLabel);
-    createAccount.appendChild(pw);
-    createAccount.appendChild(confirmLabel);
+    createAccount.appendChild(pwInput);
     createAccount.appendChild(confirmPw);
+    createAccount.appendChild(confirmInput);
 }
 
 if (vw <=680) {
